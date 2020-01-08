@@ -1,0 +1,111 @@
+/* スマートフォン画面対応 */
+@media(max-width: 768px){
+    header{
+        position: relative;
+        position: fixed;
+        /* height: 100%; */
+    }
+
+    .header-list {
+        /* display: none; */
+        position: absolute;
+        /* width: 30%; */
+        
+    }
+
+    .close-icon{
+        /* display: block; */
+        position: absolute;
+        top: 650px;
+        left: 80%;
+        font-weight: bold;
+        font-size: 20px;
+        position: fixed;
+        z-index: 20;
+        cursor: pointer;
+    }
+
+    .header-list ul{
+        display: none;
+        /* display: block; */
+        padding: 0 5px;
+        margin: 0;
+        position: fixed;
+        right: 10px;
+        height: 600vh;
+        right: 0;
+        z-index: 10;
+        background-color: skyblue;
+        /* background-color: rgba(144, 215, 236, 0.9); */
+    }
+
+    .list-bars{
+        display: block;
+    }
+
+    main{
+        text-align: justify;
+    }
+
+    .about-wrapper{
+        /* display: block!important; */
+        display: block;
+        padding: 20px;
+    }
+
+    .menu{
+        height: 1000px;
+    }
+
+    .menu-list{
+        display: block;
+        /* width: 100%; */
+    }
+
+    .product{
+        width: 100%;
+        padding: 0 10px;
+        margin-bottom: 40px;
+    }
+
+    .access{
+        height: 1000px;
+    }
+
+    .detail{
+        display: block;
+        /* height: 5000px; */
+    }
+
+    .map{
+        width: auto;
+    }
+
+    .store{
+        padding: 30px;
+    }
+
+    .move-top{
+        /* top: -70px; */
+        left: 85%;
+    }
+}
+
+/* タブレット画面対応 */
+@media(max-width: 1024px){
+    body{
+        /* margin: 0; */
+        padding: 0;
+    }
+
+    header{
+        width: 100%;
+    }
+}
+
+/* PC画面対応 */
+@media(min-width: 1024px){
+    header{
+        width: 70%;
+    }
+}
