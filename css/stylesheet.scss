@@ -1,0 +1,108 @@
+@import "variables";
+
+*{
+    box-sizing: border-box;
+}
+
+header{
+    opacity: 0.7;
+}
+
+main{
+    background-color: $mainColor;
+    h3{
+        text-align: center;
+        margin: 20px 0;
+        // padding-bottom: 30px;
+    }
+    .top-visual{
+        background-image: url(../image/background-road.jpg);
+        background-size: cover;
+        height: 300px;
+        // height: 20%;
+        position: relative;
+        h1{
+            background-color: rgba(255, 235, 205, 0.4);
+            display: inline-block;
+            padding: 20px;
+            position: absolute;
+            top: 50px;
+            left: 30%;
+        }
+    }
+    .introduction{
+        width: 100%;
+        margin: 0 auto;
+        h1{
+            font-family: serif;
+            margin: 50px 0 30px 0;
+            color: $fontColor;
+            text-align: center;
+        }
+        .card{
+            // height: auto;
+            padding: 0;
+            background-color: $newsColor;
+            border: 1px solid $mainColor;
+            // margin: 0;
+            h4{
+                font-weight: bold;
+                text-align: center;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .news-topic{
+        height: 600px;
+        color: $fontColor;
+        width: 70%;
+        margin: 0 auto;
+        h3{
+            text-align: center;
+            margin-top: 50px;
+            padding-bottom: 30px;
+        }
+        .news-list{
+            // height: 400px;
+            border-top: 1px dotted $newsColor;
+            border-bottom: 1px dotted $newsColor;
+            // margin-bottom: 30px;
+            // padding: 10px;
+            // margin-bottom: 30px;
+            .news-detail{
+                // display: inline-block;
+                display: flex;
+                align-items: center;
+                border-left: 10px solid $newsColor;
+                // margin-top: 30px;
+                // margin-bottom: 30px;
+                // margin-left: 40px;
+                margin: 20px 0 30px 40px;
+                // padding: 5px 10px;
+                height: 50px;
+                // line-height: 50px;
+                // vertical-align: middle;
+                .date{
+                    margin: 0 10px;
+                    // height: 50px;
+                    // line-height: 50px;
+                    // vertical-align: auto;
+                }
+            }
+        }
+    }
+    form{
+        // width: 600px;
+        // margin: 0 auto;
+        padding: 0 20% 30px 20%;
+        color: $fontColor;
+    }
+}
+footer{
+    // margin: 10px 0;
+    padding: 10px 0;
+    text-align: center;
+    background-color: $newsColor;
+}
